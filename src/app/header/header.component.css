@@ -1,0 +1,18 @@
+.app-header {
+	color: #ffffff;
+}
+h3 {
+	font-weight: 600;
+}
+#add {
+	margin-right: 5em;
+}
+
+#deloitte-dot {
+	width:11px;
+	height: 11px;
+	border-radius: 100px;
+	background-color: #B2FF59;
+	margin-top: 1em;
+	margin-left: 0.3em;
+}
