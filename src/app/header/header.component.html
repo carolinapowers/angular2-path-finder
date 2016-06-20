@@ -7,8 +7,8 @@
     <div class="mdl-layout--large-screen-only mdl-layout__header-row">
     </div>
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-      <a href="#overview" class="mdl-layout__tab is-active">Path</a>
-      <a href="#features" class="mdl-layout__tab">Employees</a>
+      <a [routerLink]="['/path']" class="mdl-layout__tab is-active" >Path</a>
+      <a [routerLink]="['/employees']" class="mdl-layout__tab">Employees</a>
       <a href="#features" class="mdl-layout__tab">Printers</a>
       <a href="#features" class="mdl-layout__tab">Conference Rooms</a>
       <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">

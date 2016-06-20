@@ -7,4 +7,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(AppComponent, [APP_ROUTER_PROVIDERS]);
+bootstrap(AppComponent, [APP_ROUTER_PROVIDERS])
+	.catch(err => console.error(err));
