@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'app-header',
   templateUrl: 'header.component.html',
-  styleUrls: ['header.component.css']
+  styleUrls: ['header.component.css', '../styles/template.css']
 })
 export class HeaderComponent implements OnInit {
 
