@@ -1,12 +1,12 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-import { PathComponent } from './path/path.component';
-import { EmployeesComponent } from './employees/employees.component';
+import { PATH_ROUTES } from './+path';
+import { EMPLOYEES_ROUTES } from './+employees';
 
 export const routes: RouterConfig = [
-	{ path: '/path', component: PathComponent },
-	{ path: '/employees', component: EmployeesComponent}
-	
+  ...EMPLOYEES_ROUTES,
+  ...PATH_ROUTES
 ];
+
 export const APP_ROUTER_PROVIDERS = [
 	provideRouter(routes)
 ];
