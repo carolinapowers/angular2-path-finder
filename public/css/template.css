@@ -253,3 +253,10 @@ html, body {
   padding-top: 2.5em;
   color: #fff;
 }
+
+.mdl-layout__content {
+    display: -webkit-flex;
+  display: flex;
+    -webkit-flex-direction: column;
+          flex-direction: column;
+}
