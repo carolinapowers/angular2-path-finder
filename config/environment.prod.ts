@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiEndpoint: 'http://localhost:3001/',
+  apiEndpoint: 'http://localhost:3000/api/',
   apiExtension: ''
 };
