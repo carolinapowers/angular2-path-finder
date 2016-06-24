@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static('angular2-path-finder'));
 
 var employees = require ('./routes/employees');
-app.use('/employees', employees);
+app.use('/api/employees', employees);
 
 app.listen(3000, function () {
 	console.log('App listening on port 3000');
