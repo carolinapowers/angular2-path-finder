@@ -1,7 +1,7 @@
 var express = require ('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var parseUrlencoded = bodyParser.parseUrlencoded({extend: false});
+var parseUrlencoded = bodyParser.urlencoded({ extended: false });
 
 var employees = {
 	'firstName': 'Carolina',
@@ -15,7 +15,8 @@ var employees = {
 
 router.route('/')
 	.get (function (request, response){
-		response.sendStatus(200);
+		response.status(200);
+		response.json(employees);
 	})
 	.post (parseUrlencoded, function (request, response){
 
