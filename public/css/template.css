@@ -238,3 +238,25 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+.mdl-layout__tab {
+  color: #ffffff;
+}
+.mdl-layout__tab-bar {
+  width: 100%;
+  height: auto;
+  padding: 0.8em 3.5em;
+}
+
+.mdl-layout__header {
+  height: auto;
+  padding-top: 2.5em;
+  color: #fff;
+}
+
+.mdl-layout__content {
+    display: -webkit-flex;
+  display: flex;
+    -webkit-flex-direction: column;
+          flex-direction: column;
+}
