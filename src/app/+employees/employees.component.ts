@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../shared/services/employees.service';
 import { Employee } from '../shared/models/employee';
+import { Http } from '@angular/http';
 
 
 @Component({
@@ -8,7 +9,15 @@ import { Employee } from '../shared/models/employee';
   selector: 'app-employees',
   templateUrl: 'employees.component.html',
   styleUrls: ['employees.component.css'],
-  providers: [EmployeesService]
+  providers: [EmployeesService, Http]
+  // template: `
+  // <ul>
+  //   <li *ngFor=>"let employee of employeesArr">
+  //     {{employee | json}}
+  //   </li>
+  // </ul>
+
+  // `
 })
 export class EmployeesComponent implements OnInit {
 	employeesArr: Array<Employee>;
