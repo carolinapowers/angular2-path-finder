@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../shared/services/employees.service';
 import { Employee } from '../shared/models/employee';
-import { Http } from '@angular/http';
+
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Http } from '@angular/http';
   selector: 'app-employees',
   templateUrl: 'employees.component.html',
   styleUrls: ['employees.component.css'],
-  providers: [EmployeesService, Http]
+  providers: [EmployeesService]
   // template: `
   // <ul>
   //   <li *ngFor=>"let employee of employeesArr">
