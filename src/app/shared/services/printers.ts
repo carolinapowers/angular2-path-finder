@@ -1,3 +1,4 @@
+import {Injectable} from '@angular/core';
 import {Http, URLSearchParams} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -5,7 +6,8 @@ import 'rxjs/add/operator/map';
 import { environment } from '../../environment';
 import {Printer} from '../models/printer';
 
-export class Printers {
+@Injectable()
+export class PrintersService {
   private url: string = '';
 
   constructor(private http: Http) {
